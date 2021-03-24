@@ -1,0 +1,176 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Nest-Serverless-Lambda-DynamoDB",
+		"_postman_id": "621e1124-6456-3f7d-113a-90294e23fbb5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "lambda",
+			"description": "",
+			"item": [
+				{
+					"name": "getAllLambda",
+					"request": {
+						"url": "https://vw3eufbqn8.execute-api.us-east-1.amazonaws.com/dev/counters",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getOneLambda",
+					"request": {
+						"url": "https://vw3eufbqn8.execute-api.us-east-1.amazonaws.com/dev/counters/test",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "putLambda",
+					"request": {
+						"url": "https://vw3eufbqn8.execute-api.us-east-1.amazonaws.com/dev/counters/test",
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createLambda",
+					"request": {
+						"url": "https://vw3eufbqn8.execute-api.us-east-1.amazonaws.com/dev/counters",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "test",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLambda",
+					"request": {
+						"url": "https://vw3eufbqn8.execute-api.us-east-1.amazonaws.com/dev/counters/test",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "test",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "local",
+			"description": "",
+			"item": [
+				{
+					"name": "geAllLocal",
+					"request": {
+						"url": "localhost:3000/counters",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getLocal",
+					"request": {
+						"url": "localhost:3000/counters/test",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "putLocal",
+					"request": {
+						"url": "localhost:3000/counters/testing",
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createLocal",
+					"request": {
+						"url": "localhost:3000/counters",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "testing",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLocal",
+					"request": {
+						"url": "localhost:3000/counters/testing",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
