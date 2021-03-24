@@ -13,14 +13,12 @@ export class CountersController {
 
   @Get()
   findAll() {
-    let data = this.countersService.findAll();
-    console.log(data)
-    return data
+    return this.countersService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.countersService.findOne(id);
+	findOne(@Param('id') id: string) {
+	  return this.countersService.findOne(id);
   }
 
   @Put(':id')

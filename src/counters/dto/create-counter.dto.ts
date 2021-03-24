@@ -1,3 +1,3 @@
 export class CreateCounterDto {
-    [key: string]: number
+    [ke: string]: Number
 }
